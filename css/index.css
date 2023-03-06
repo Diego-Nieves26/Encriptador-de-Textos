@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button {
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+nav {
+  text-align: center;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+
+main {
+  flex-direction: column;
+}
+
+article {
+  width: 100%;
+  flex-direction: column;
+}
+
+article > textarea {
+  width: 100%;
+  padding: 20px;
+  min-height: 200px;
+}
+
+article > h2 {
+  font-size: 19px;
+}
+
+article > div {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 10px;
+}
+
+img {
+  filter: contrast(200%);
+  max-height: 259px;
+  background-color: gray;
+  width: 100%;
+  object-fit: contain;
+}
+
+aside {
+  background-color: aliceblue;
+  min-width: 335px;
+}
+
+aside > h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+aside > textarea {
+  width: calc(100% - 40px);
+  resize: none;
+  margin: 20px;
+  text-align: justify;
+  border: none;
+  background-color: aliceblue;
+  outline: none;
+  font-size: 18px;
+  height: auto;
+}
+
+aside > button {
+  margin: 0 0 20px 20px;
+}
+
+@media (min-width: 650px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start !important;
+  }
+}

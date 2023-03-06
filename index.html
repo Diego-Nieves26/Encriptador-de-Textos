@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Encriptador y Desencriptador de Textos</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>Encriptador y Desencriptador de Textos</h1>
+      </nav>
+      <main class="flex__center">
+        <article class="flex__center">
+          <textarea
+            id="camp-text"
+            placeholder="Ingrese su texto aqui"
+          ></textarea>
+          <h2>Sólo letra minusculas y sin acento</h2>
+          <div class="flex__center">
+            <button class="button" onclick="encrypt()">Encriptar</button>
+            <button class="button" onclick="decrypt()">Desencriptar</button>
+          </div>
+        </article>
+        <aside>
+          <img src="img/vacio.png" id="img" />
+          <h2 class="no-text">No ingresaste ningun texto</h2>
+          <textarea id="text-encrypt"> </textarea>
+          <button
+            class="button copy-btn"
+            type="button"
+            id="copiar"
+            onclick="copia()"
+          >
+            ¡Copiar!
+          </button>
+        </aside>
+      </main>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
