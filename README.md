@@ -5,19 +5,17 @@
 
 ## Decripcion
 
-Realiza un chat falso de Whatsapp agregando los ajustes que el usuario quiera. Se puede descargar el chat generado con la herramienta canvas a travez de una imagen PNG.
+Encripta y desencripta textos, ayuda a enviar mensajes seguros. 
 
 ## Link
 
-- https://sensational-cupcake-2df5d6.netlify.app/
+- https://earnest-eclair-9fe886.netlify.app/
 
 ## Lenguajes o Herramientas
 
 - HTML
 - CSS
 - JS
-- Canvas
-- Boostrap
 
 ## Autor
 
